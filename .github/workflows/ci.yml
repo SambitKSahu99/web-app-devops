@@ -74,7 +74,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }} # As we are going to commit to github repo so we need a token
+          token: ${{ secrets.TOKEN }} # As we are going to commit to github repo so we need a token
 
       - name: Update tag in Helm Chart
         run: |
